@@ -1,5 +1,5 @@
 body{
- background: #000;   
+ 
 }
 
 .white{
@@ -14,10 +14,26 @@ body{
     background: url("../images/tokyo.jpg");
     border: solid #fff 3px;
 }
-#menu{
-    background: #fff;
+.menu{
+    color: #fff;
+    border: solid #fff 1px;
     
+    background-color: #0000009d;
+    display: flex;
+    justify-content: center;
+ 
 }
 #content{
     background: #fff;
+}
+li{
+  
+    background-color: #000000;
+    
+    width: 80px;
+    margin: 30px;
+    text-align: center;
+    font-size: 20px;
+    display: inline;
+ 
 }
