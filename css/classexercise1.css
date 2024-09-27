@@ -14,3 +14,10 @@ body{
     background: url("../images/tokyo.jpg");
     border: solid #fff 3px;
 }
+#menu{
+    background: #fff;
+    
+}
+#content{
+    background: #fff;
+}
