@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+   
+</head>
+<body>
+ 
+
+    <div class="box" >
+       <img src="images/tokyo.jpg" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"alt="">
+      </div>
+      
+
+      <script>
+        //gsap.registerPlugin(ScrollTrigger)
+        gsap.to(".box",{
+            scrollTrigger:{
+                trigger: "#title",
+                start: "top ", //"top center", "10px 80%"
+                end: "bottom 200px",//"+=200"
+                toggleActions: "restart restart pause pause",//play, pause, resume, reverse, complete, restart, reset, or none.
+                scrub: 1, //1 sec, or  srub:true start到end的時間
+                //horizontal: true,
+                markers: true
+            },
+            x:500,
+            duration: 5//no use if scrub:1
+        });
+        //toggleActions:
+        //第一個參數代表: onEnter - 向下滾動，目標啟動點 與 視窗捲軸開始
+        //第二個參數代表: onLeave - 向下滾動，目標結束點 與 視窗捲軸結束
+        //第三個參數代表: onEnterBack - 向上滾動，目標結束點 與 視窗捲軸結束
+        //第四個參數代表: onLeaveBack - 向上滾動，目標啟動點 與 視窗捲軸開始
+         
+    
+    </script>
+          
+</body>
+</html>
